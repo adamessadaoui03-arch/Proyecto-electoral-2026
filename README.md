@@ -6,22 +6,22 @@
 #### 1.  Marca e Identidad Visual
 
 
-**Nombre:** Avança
-**Eslogan:** Avancem junts
-**Valores:** Vivienda asequible, mejor transporte (Cercanias), servicios publicos de calidad y juventud
+- **Nombre:** Avança
+- **Eslogan:** Avancem junts
+- **Valores:** Vivienda asequible, mejor transporte (Cercanias), servicios publicos de calidad y juventud
 
 ---
 #### Colores de la web
-**Verde Botella (#2B6717):** Color principal (60%). Seriedad, sostenibilidad y servicios publicos
-**Verde Lima (#91E336):** Color secundario (30%). Progreso, juventud y dinamismo
-**Naranja (#FF7A38):** Acento y botones de accion (10%). Para llamadas a la accion como "Únete" o "Vota"
+- **Verde Botella (#2B6717):** Color principa. Seriedad, sostenibilidad y servicios publicos
+- **Verde Lima (#91E336):** Color secundario. Progreso, juventud y dinamismo
+- **Naranja (#FF7A38):** Acento y botones de accion. Para llamadas a la accion como "Únete" o "Vota"
 
 ---
 
 
 #### Tipografia y Logo
-**Tipografia:** Arial / Arial Black
-**Logo:** La palabra **Avança** con la tipografia Arial en verde oscuro y un detalle/flecha en verde lima y naranja
+- **Tipografia:** Arial / Arial Black
+- **Logo:** La palabra **Avança** con la tipografia Arial en verde oscuro y un detalle/flecha en verde lima y naranja
 
 ![alt text](image-4.png)
 ![alt text](image-5.png)
