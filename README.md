@@ -23,8 +23,8 @@
 - **Tipografia:** Arial / Arial Black
 - **Logo:** La palabra **Avança** con la tipografia Arial en verde oscuro y un detalle/flecha en verde lima y naranja
 
-![alt text](image-4.png)
-![alt text](image-5.png)
+![alt text](image-1.png)
+![alt text](image-2.png)
 
 ---
 
