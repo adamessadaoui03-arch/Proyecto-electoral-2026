@@ -117,7 +117,7 @@ a:focus, button:focus, input:focus, select:focus, textarea:focus {
       rgba(43, 103, 23, 0.4) 65%, 
       rgba(43, 103, 23, 0) 85%
     ),
-    url("../../img/4.jpeg");
+    url("img/mesa.jpeg");
   background-repeat: no-repeat;
   background-position: right center;
   background-size: auto 100%;
@@ -301,7 +301,7 @@ a:focus, button:focus, input:focus, select:focus, textarea:focus {
         rgba(43, 103, 23, 0.6) 65%, 
         rgba(43, 103, 23, 0) 100%
       ),
-      url("../../img/4.jpeg");
+      url("img/mesa.jpeg");
     background-position: center top;
     background-size: cover;
   }
