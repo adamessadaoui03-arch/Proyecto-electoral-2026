@@ -37,7 +37,6 @@ img {
   text-decoration: none;
   padding: 12px 24px;
   border-radius: 6px;
-  border: none;
 }
 
 .boton-naranja:hover {
@@ -61,7 +60,6 @@ img {
 
 .cabecera {
   background-color: white;
-  border-bottom: 4px solid #2B6717;
   padding: 15px 0;
   position: sticky;
   top: 0;
@@ -79,13 +77,6 @@ img {
   height: 80px;
 }
 
-.flecha {
-  color: #91E336;
-  background-color: #FF7A38;
-  padding: 0 6px;
-  border-radius: 4px;
-}
-
 .menu ul {
   display: flex;
   list-style: none;
@@ -99,9 +90,6 @@ img {
   font-weight: bold;
 }
 
-
-
-/* PORTADA CON DEGRADADO VERDE A LA IZQUIERDA Y FOTO A LA DERECHA */
 .hero {
   min-height: 520px;
   background-image: 
@@ -116,15 +104,9 @@ img {
   background-repeat: no-repeat;
   background-position: right center;
   background-size: auto 100%;
-  background-color: #2B6717;
   display: flex;
   align-items: center;
   padding: 60px 0;
-}
-
-.hero-contenido {
-  display: flex;
-  justify-content: flex-start;
 }
 
 .hero-texto {
@@ -147,7 +129,6 @@ img {
 
 .botones-hero {
   display: flex;
-  justify-content: flex-start;
   gap: 15px;
   flex-wrap: wrap;
 }
@@ -184,18 +165,12 @@ img {
 }
 
 .tarjeta {
-  background-color: #FF7A38;
   color: white;
   padding: 20px;
   border-radius: 8px;
 }
-
-.tarjeta img:hover{
-  transform: scale(1.05);
-  transition: transform 0.3s;
-}
 .tarjeta h3{
-  color: white;
+  color: inherit;
 }
 
 .grid-candidats {
@@ -206,7 +181,6 @@ img {
 
 .tarjeta-candidat {
   background-color: #FFFFFF;
-  border-radius: 0;
   overflow: hidden;
   border: 1px solid #cccccc;
   display: flex;
@@ -218,7 +192,6 @@ img {
   height: 320px;
   object-fit: cover;
   object-position: center top;
-  display: block;
 }
 
 .info-candidat {
@@ -233,31 +206,6 @@ img {
 .cargo {
   color: #2B6717;
   font-weight: bold;
-  margin-bottom: 0;
-}
-
-.lista-agenda {
-  list-style: none;
-}
-
-.item-agenda {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  background-color: #F2F5F1;
-  padding: 15px;
-  margin-bottom: 15px;
-  border-left: 6px solid #FF7A38;
-  border-radius: 4px;
-}
-
-.fecha {
-  background-color: #2B6717;
-  color: #FFFFFF;
-  font-family: 'Arial Black', Arial, sans-serif;
-  padding: 10px 15px;
-  border-radius: 6px;
-  text-align: center;
 }
 
 .formulario {
@@ -268,26 +216,6 @@ img {
   margin-top: 20px;
 }
 
-.formulario label {
-  display: block;
-  font-weight: bold;
-  margin-bottom: 5px;
-}
-
-.formulario input,
-.formulario select,
-.formulario textarea {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 15px;
-  border: 1px solid #999999;
-  border-radius: 4px;
-  font-family: Arial, sans-serif;
-}
-
-.ancho-total {
-  width: 100%;
-}
 
 .pie {
   background-color: #16360B;
@@ -321,12 +249,6 @@ img {
     font-size: 36px;
   }
 
-  .boton-hamburguesa {
-    display: block;
-    font-size: 30px;
-    color: #2B6717;
-    cursor: pointer;
-  }
 
   .menu {
     display: none;
@@ -355,10 +277,6 @@ img {
     grid-template-columns: 1fr;
   }
 
-  .item-agenda {
-    flex-direction: column;
-    align-items: flex-start;
-  }
 }
 .bloque {
   display: flex;
@@ -374,10 +292,8 @@ img {
 
 .bloque h2 {
   color: inherit;
-  font-family: "Arial Black", Arial, sans-serif;
   text-transform: uppercase;
   font-size: 36px;
-  margin: 0 0 15px 0;
   }
 
 .bloque p, .bloque li {
@@ -389,7 +305,6 @@ img {
 .fondo-3 { background: #FF7A38; color: #2B6717; }
 .fondo-4 { background: rgb(194, 178, 178); color: #2B6717; }
 
-/* FOTO CON FRASE */
 .foto-cita {
   position: relative;
   border-radius: 20px;
@@ -401,7 +316,6 @@ img {
   display: block;
 }
 
-/* Caja de texto sobre la zona de la izquierda */
 .texto-cita {
   position: absolute;
   left: 4%;
@@ -416,14 +330,13 @@ img {
 .frase {
   font-family: "Arial Black", Arial, sans-serif;
   font-size: clamp(13px, 1.4vw, 18px);
-  margin: 0 0 10px 0;
+  margin-bottom: 10px;
 }
 
-.cargo-cita {
+.cargo-frase {
   color: #91E336;
   font-weight: bold;
   font-size: clamp(11px, 1vw, 14px);
-  margin: 0;
 }
 
 @media (max-width: 768px) {
@@ -443,53 +356,21 @@ img {
   }
 }
 
-/* Tarjetas de colores en la portada */
-.grid-programa .tarjeta {
-  border: none;
-}
+
 
 .grid-programa .tarjeta h3 {
   color: inherit;
 }
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
 
 body {
-  font-family: Arial, sans-serif;
   background-color: #F2F5F1;
-  color: #1A1A1A;
-  line-height: 1.6;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
 
-.contenedor {
-  width: 90%;
-  max-width: 1100px;
-  margin: 0 auto;
-}
 
-.cabecera {
-  background-color: #FFFFFF;
-  border-bottom: 4px solid #2B6717;
-  padding: 15px 0;
-}
-
-.cabecera-flex {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 50px;
-}
-
-.logo img {
-  height: 80px;
-}
 
 .boton-volver {
   text-decoration: none;
@@ -520,8 +401,6 @@ body {
 }
 
 .caja-formulario h1 {
-  font-family: 'Arial Black', Arial, sans-serif;
-  color: #2B6717;
   margin-bottom: 10px;
 }
 
@@ -533,7 +412,6 @@ body {
   display: block;
   font-weight: bold;
   margin-bottom: 6px;
-  color: #1A1A1A;
 }
 
 .campo input,
@@ -544,22 +422,6 @@ body {
   border-radius: 6px;
   font-family: Arial, sans-serif;
   font-size: 15px;
-}
-
-
-
-.campo-checkbox {
-  display: flex;
-  align-items: flex-start;
-  gap: 10px;
-  margin-bottom: 22px;
-  font-size: 14px;
-}
-
-.campo-checkbox input {
-  margin-top: 4px;
-  width: 16px;
-  height: 16px;
 }
 
 .boton-enviar {
@@ -578,28 +440,15 @@ body {
   background-color: #e66627;
 }
 
-.pie {
-  background-color: #16360B;
-  color: #FFFFFF;
-  text-align: center;
-  padding: 25px 0;
-}
-
 @media (max-width: 600px) {
-  .fila-doble {
-    flex-direction: column;
-    gap: 0;
-  }
-
+ 
   .caja-formulario {
     padding: 20px;
   }
 }
 
-/* AGENDA */
 .agenda-flex {
   display: flex;
-  flex-direction: row;
   gap: 40px;
   align-items: flex-start;
 }
@@ -612,7 +461,6 @@ body {
 
 .actes {
   flex: 1;
-  min-width: 0;
 }
 
 .lista-actes {
@@ -620,24 +468,8 @@ body {
 }
 
 .lista-actes li {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 20px;
   padding: 12px 0;
   margin: 20px;
-}
-
-.detalle {
-  color: #555555;
-  font-size: 15px;
-  margin: 0;
-}
-
-.boton-mes {
-  padding: 6px 20px;
-  font-size: 14px;
-  border-radius: 4px;
 }
 
 @media (max-width: 768px) {
