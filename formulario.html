@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Uneix-te - Avança</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+  <header class="cabecera">
+    <div class="contenedor cabecera-flex">
+      <a href="index.html" class="logo">
+        <img src="img/logo_transparente.png" alt="Logo Avança">
+      </a>
+
+      <nav class="menu">
+        <a href="index.html" class="boton-volver">← Tornar a l'inici</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="seccion-formulario">
+    <div class="contenedor">
+      <div class="caja-formulario">
+        <h1>Uneix-te a Avança</h1>
+        <p class="descripcion">Ompli les teues dades bàsiques per a col·laborar o rebre informació de la campanya.</p>
+
+        <form action="#" method="post">
+          <div class="fila-doble">
+            <div class="campo">
+              <label for="nom">Nom</label>
+              <input type="text" id="nom" name="nom" placeholder="El teu nom" required>
+            </div>
+
+            <div class="campo">
+              <label for="cognoms">Cognoms</label>
+              <input type="text" id="cognoms" name="cognoms" placeholder="Els teus cognoms" required>
+            </div>
+          </div>
+
+          <div class="fila-doble">
+            <div class="campo">
+              <label for="dni">DNI / NIE</label>
+              <input type="text" id="dni" name="dni" placeholder="12345678X" required>
+            </div>
+
+            <div class="campo">
+              <label for="telefon">Telèfon</label>
+              <input type="tel" id="telefon" name="telefon" placeholder="600 000 000" required>
+            </div>
+          </div>
+
+          <div class="campo">
+            <label for="email">Correu electrònic</label>
+            <input type="email" id="email" name="email" placeholder="exemple@correu.com" required>
+          </div>
+
+          <div class="fila-doble">
+            <div class="campo">
+              <label for="provincia">Província *</label>
+              <select id="provincia" name="provincia" required>
+                <option value="">Selecciona una província</option>
+                <option value="valencia">València</option>
+                <option value="alacant">Alacant</option>
+                <option value="castello">Castelló</option>
+              </select>
+            </div>
+
+            <div class="campo">
+              <label for="cp">Codi Postal</label>
+              <input type="text" id="cp" name="cp" placeholder="46700" maxlength="5" required>
+            </div>
+          </div>
+
+          <div class="campo">
+            <label for="localitat">Localitat</label>
+            <input type="text" id="localitat" name="localitat" placeholder="Ex: Gandia" required>
+          </div>
+
+          <button type="submit" class="boton-enviar">Enviar inscripció</button>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer class="pie">
+    <div class="contenedor">
+      <p><strong>Avança</strong> — Avancem junts | Campanya Electoral 2026</p>
+      <p>Equip: Adam i Carlos</p>
+    </div>
+  </footer>
+
+</body>
+</html>

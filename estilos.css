@@ -27,9 +27,7 @@ img {
   height: auto;
 }
 
-a:focus, button:focus, input:focus, select:focus, textarea:focus {
-  outline: 3px solid #FF7A38;
-}
+
 
 .boton-naranja {
   display: inline-block;
@@ -40,7 +38,6 @@ a:focus, button:focus, input:focus, select:focus, textarea:focus {
   padding: 12px 24px;
   border-radius: 6px;
   border: none;
-  cursor: pointer;
 }
 
 .boton-naranja:hover {
@@ -102,9 +99,7 @@ a:focus, button:focus, input:focus, select:focus, textarea:focus {
   font-weight: bold;
 }
 
-.checkbox-oculto, .boton-hamburguesa {
-  display: none;
-}
+
 
 /* PORTADA CON DEGRADADO VERDE A LA IZQUIERDA Y FOTO A LA DERECHA */
 .hero {
@@ -166,7 +161,11 @@ a:focus, button:focus, input:focus, select:focus, textarea:focus {
 }
 
 .fondo-verde {
-  background-color: #2B6717;
+  background-image: url("img/fondo.jpeg");
+  background-repeat: no-repeat;
+  background-size:  cover;
+  background-position: bottom;
+  background-attachment: fixed;
 }
 
 .texto-blanco {
@@ -185,11 +184,18 @@ a:focus, button:focus, input:focus, select:focus, textarea:focus {
 }
 
 .tarjeta {
-  background-color: #FFFFFF;
-  border: 2px solid #2B6717;
-  border-top: 8px solid #91E336;
+  background-color: #FF7A38;
+  color: white;
   padding: 20px;
   border-radius: 8px;
+}
+
+.tarjeta img:hover{
+  transform: scale(1.05);
+  transition: transform 0.3s;
+}
+.tarjeta h3{
+  color: white;
 }
 
 .grid-candidats {
@@ -352,5 +358,294 @@ a:focus, button:focus, input:focus, select:focus, textarea:focus {
   .item-agenda {
     flex-direction: column;
     align-items: flex-start;
+  }
+}
+.bloque {
+  display: flex;
+  gap: 40px;
+  border-radius: 20px;
+  padding: 30px;
+  margin-bottom: 15px;
+}
+
+.bloque .numero {
+  min-width: 80px;
+  } 
+
+.bloque h2 {
+  color: inherit;
+  font-family: "Arial Black", Arial, sans-serif;
+  text-transform: uppercase;
+  font-size: 36px;
+  margin: 0 0 15px 0;
+  }
+
+.bloque p, .bloque li {
+  font-size: 18px;
+  line-height: 1.5;
+  }
+.fondo-1 { background: #91E336; color: #2B6717; }
+.fondo-2 { background: #2B6717; color: white; }
+.fondo-3 { background: #FF7A38; color: #2B6717; }
+.fondo-4 { background: rgb(194, 178, 178); color: #2B6717; }
+
+/* FOTO CON FRASE */
+.foto-cita {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.foto-cita img {
+  width: 100%;
+  display: block;
+}
+
+/* Caja de texto sobre la zona de la izquierda */
+.texto-cita {
+  position: absolute;
+  left: 4%;
+  top: 30%;
+  width: 28%;
+  padding: 20px;
+  background: rgba(43, 103, 23, 0.85);
+  border-radius: 15px;
+  color: white;
+}
+
+.frase {
+  font-family: "Arial Black", Arial, sans-serif;
+  font-size: clamp(13px, 1.4vw, 18px);
+  margin: 0 0 10px 0;
+}
+
+.cargo-cita {
+  color: #91E336;
+  font-weight: bold;
+  font-size: clamp(11px, 1vw, 14px);
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .texto-cita {
+    position: static;
+    width: 100%;
+    border-radius: 0;
+    background: #2B6717;
+  }
+
+  .frase {
+    font-size: 20px;
+  }
+
+  .cargo-cita {
+    font-size: 16px;
+  }
+}
+
+/* Tarjetas de colores en la portada */
+.grid-programa .tarjeta {
+  border: none;
+}
+
+.grid-programa .tarjeta h3 {
+  color: inherit;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #F2F5F1;
+  color: #1A1A1A;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.contenedor {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.cabecera {
+  background-color: #FFFFFF;
+  border-bottom: 4px solid #2B6717;
+  padding: 15px 0;
+}
+
+.cabecera-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+}
+
+.logo img {
+  height: 80px;
+}
+
+.boton-volver {
+  text-decoration: none;
+  color: #2B6717;
+  font-weight: bold;
+  border: 2px solid #2B6717;
+  padding: 8px 16px;
+  border-radius: 6px;
+}
+
+.boton-volver:hover {
+  background-color: #2B6717;
+  color: #FFFFFF;
+}
+
+.seccion-formulario {
+  flex: 1;
+  padding: 50px 0;
+}
+
+.caja-formulario {
+  background-color: #FFFFFF;
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 35px;
+  border-radius: 8px;
+  border: 2px solid #2B6717;
+}
+
+.caja-formulario h1 {
+  font-family: 'Arial Black', Arial, sans-serif;
+  color: #2B6717;
+  margin-bottom: 10px;
+}
+
+.campo {
+  margin-bottom: 18px;
+}
+
+.campo label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 6px;
+  color: #1A1A1A;
+}
+
+.campo input,
+.campo select {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #999999;
+  border-radius: 6px;
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+}
+
+
+
+.campo-checkbox {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 22px;
+  font-size: 14px;
+}
+
+.campo-checkbox input {
+  margin-top: 4px;
+  width: 16px;
+  height: 16px;
+}
+
+.boton-enviar {
+  width: 100%;
+  background-color: #FF7A38;
+  color: #000000;
+  font-family: 'Arial Black', Arial, sans-serif;
+  font-size: 16px;
+  padding: 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.boton-enviar:hover {
+  background-color: #e66627;
+}
+
+.pie {
+  background-color: #16360B;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 25px 0;
+}
+
+@media (max-width: 600px) {
+  .fila-doble {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .caja-formulario {
+    padding: 20px;
+  }
+}
+
+/* AGENDA */
+.agenda-flex {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.calendario-img {
+  width: 45%;
+  flex-shrink: 0;
+  border-radius: 15px;
+}
+
+.actes {
+  flex: 1;
+  min-width: 0;
+}
+
+.lista-actes {
+  list-style: none;
+}
+
+.lista-actes li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 12px 0;
+  margin: 20px;
+}
+
+.detalle {
+  color: #555555;
+  font-size: 15px;
+  margin: 0;
+}
+
+.boton-mes {
+  padding: 6px 20px;
+  font-size: 14px;
+  border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+  .agenda-flex {
+    flex-direction: column;
+  }
+
+  .calendario-img {
+    width: 100%;
   }
 }
